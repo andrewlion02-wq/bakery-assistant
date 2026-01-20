@@ -1,6 +1,6 @@
 class BakeryAssistant:
     def welcome(self, name):
-        return f"Hola {name}, Mi nombre es: Eurísaco, y seré tu asistente virtual en panadería. "
+        return f"Hola {name}, Mi nombre es Eurísaco, y seré tu asistente virtual en panadería. "
 
     def bakery_level(self, years):
         if years < 1:   
