@@ -27,7 +27,7 @@ else:
 
 # ejercicio 4 ( clasificación de un número según su signo )
 
-numero = int(input("ingresa un numero positivo o negativo:"))
+numero = int(input("ingresa un numero positivo o negativo:"))  
 
 if numero > 0:
     print(" es positivo")
