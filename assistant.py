@@ -10,4 +10,9 @@ class BakeryAssistant:
         else:
             return "Avanzado"
 
+    def show_reciopes(self):
+        pass
+
+    
+
 
