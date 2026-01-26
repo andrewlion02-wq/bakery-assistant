@@ -36,7 +36,7 @@ recetas_por_nivel = {
         },
         {
             "nombre": "Brioche",
-            "ingredientes": ["Harina", "sal ", "Azucar", "Levadura", "Huevos","mantequilla",],
+            "ingredientes": ["Harina", "sal ", "Azucar", "Levadura", "Huevos","leche", "mantequilla",],
             "tiempo": "5 horas",
             "nivel": "Avanzado"
         }

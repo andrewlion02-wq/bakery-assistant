@@ -1,5 +1,5 @@
 
-productos = ["Focaccia", "Pan integral", "Sourdough", "Cinnamon roll", "Pan de molde"]
+productos = ["Focaccia", "Pan integral", "Sourdough", "Cinnamon roll", "Pan de molde", "Brioche"]
 
 for producto in productos:
     print(f"producto: {producto}")
