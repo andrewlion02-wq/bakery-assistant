@@ -1,15 +1,3 @@
-from assistant import BakeryAssistant
-
-assistant = BakeryAssistant()
-
-name = input("Cual es tu nombre?: ").strip().lower()
-years = int(input("Cuantos años de experiencia tienes haciendo pan? ").strip())
-
-level = assistant.bakery_level(years)
-
-print(assistant.welcome(name))
-print(f"Tu experiencia como panadero es: {level}")
-
 while True:
     option = input(
         "¿Dime que opcion deseas?\n "
@@ -26,5 +14,11 @@ while True:
         print("Saliendo del horno")
         break
     else:
-        print("Por favor elige una option valida") 
+        print("Por favor elige una option valida (1, 2, 3): ")
+
+    
+
+     
+
+
 
