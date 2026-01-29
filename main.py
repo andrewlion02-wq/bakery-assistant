@@ -27,7 +27,7 @@ def show_recommended_recipes_menu(assistant, level):
         if submenu == "1":
             print(assistant.get_recipe_ingredients(level, recipe_name))
         elif submenu == "2":
-            print(assistant.get_steps(level, recipe_name))
+            print(assistant.get_recipe_steps(level, recipe_name))
         elif submenu == "3":
             print("Volviendo al menu principal")
             break
@@ -48,9 +48,9 @@ while True:
     option = input(
         "¿Dime que opcion deseas?\n "
         "1: Mostrar recetas\n "
-        "2: Rercomendar recetas\n "
+        "2: Recomendar recetas\n "
         "3: Salir\n "
-        "Por favor elige una option para continuar (1, 2, 3): ").strip().lower()
+        "Por favor elige una option para continuar (1, 2, 3): ").strip()
 
     if option == "1":
         print(assistant.show_recipes())

@@ -5,17 +5,17 @@ class BakeryAssistant:
                 "focaccia": {
                     "ingredientes": ["harina de trigo 1000g", "agua 350ml", "poolish 1200g (harina de trigo 600g + agua 600ml + azucar 2g + levadura 2g)", "sal 10g", "azucar 20g", "levadura 10g", "aceite de oliva 150ml"],
                     "pasos": [ 
-                        "Paso 1: mezclar todos los ingredientes en un bol grande ecepto el poolish",
+                        "Paso 1: mezclar todos los ingredientes en un bol grande excepto el poolish",
                         "Paso 2: amasar por 15 minutos y formar una masa homogenea y lisa",
-                        "Paso 3: agregar el poolish y amasar nuevamente hasta optener una masa lisa",
+                        "Paso 3: agregar el poolish y amasar nuevamente hasta obtener una masa lisa",
                         "Paso 4: dejar reposar la masa por 1 hora y media y dar pliegues cada 30 minutos ",
-                        "Paso 5: precalienta el horo 200 grados y hornear a 175 grados por 20 minutos",
+                        "Paso 5: precalienta el horno a 200 grados y hornear a 175 grados por 20 minutos",
                     ]
                 }, 
                 "pan integral": {
                     "ingredientes": ["harina integral 1000g", "agua 650ml", "levadura 10g", "sal 10g", "miel 120g", "mix de semillas de tu eleccion previamente hidratadas", "masa madre 200g"],
                     "pasos": [
-                        "Paso 1: mezcla todos los ingredientes en un bol grande ecepto las semillas hasta obtener una masa homogenea y lisa",
+                        "Paso 1: mezcla todos los ingredientes en un bol grande ecepto las semillas hasta obtener una masa homogenea y lisa ",
                         "Paso 2: agrega las semillas y mezcla",
                         "Paso 3: deja reposar la masa por 1 hora",
                         "Paso 4: hornea la masa por 20 minutos a 180 grados"
@@ -56,7 +56,7 @@ class BakeryAssistant:
                     "ingredientes": ["harina 1000g", "leche 350ml", "levadura 30g", "azucar 160g", "sal 10g", "huevos 5", "mantequilla 300g"],
                     "pasos": [
                         "Paso 1: mezcla todos los ingredientes en un bol grande ecepto la mantequilla",
-                        "Paso 2: agrega la mantequilla previamenete cortada en cubo y fria, mezclar hasta obtener una masa homogenea y lisa",
+                        "Paso 2: agrega la mantequilla previamente cortada en cubo y fria, mezclar hasta obtener una masa homogenea y lisa",
                         "Paso 3: deja reposar la masa por 24 horas",
                         "Paso 4: hornea a 170 grados por 20 minutos"
                     ]
@@ -110,7 +110,7 @@ class BakeryAssistant:
         
         return result   
 
-    def get_steps(self, level, recipe_name):
+    def get_recipe_steps(self, level, recipe_name):
         recipe = self.recipes_by_level.get(level, {}).get(recipe_name.lower())
         if not recipe:
             return "Lo siento receta no encontrada"
